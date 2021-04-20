@@ -1,23 +1,22 @@
 {
   "files": {
-    "main.css": "/daily-ui-challenge/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/daily-ui-challenge/static/js/main.8580970d.chunk.js",
-    "main.js.map": "/daily-ui-challenge/static/js/main.8580970d.chunk.js.map",
-    "runtime-main.js": "/daily-ui-challenge/static/js/runtime-main.ff6682c5.js",
-    "runtime-main.js.map": "/daily-ui-challenge/static/js/runtime-main.ff6682c5.js.map",
-    "static/js/2.c01a6c26.chunk.js": "/daily-ui-challenge/static/js/2.c01a6c26.chunk.js",
-    "static/js/2.c01a6c26.chunk.js.map": "/daily-ui-challenge/static/js/2.c01a6c26.chunk.js.map",
-    "static/js/3.36971444.chunk.js": "/daily-ui-challenge/static/js/3.36971444.chunk.js",
-    "static/js/3.36971444.chunk.js.map": "/daily-ui-challenge/static/js/3.36971444.chunk.js.map",
+    "main.css": "/daily-ui-challenge/static/css/main.4a4137e4.chunk.css",
+    "main.js": "/daily-ui-challenge/static/js/main.112769b0.chunk.js",
+    "main.js.map": "/daily-ui-challenge/static/js/main.112769b0.chunk.js.map",
+    "runtime-main.js": "/daily-ui-challenge/static/js/runtime-main.82986ae1.js",
+    "runtime-main.js.map": "/daily-ui-challenge/static/js/runtime-main.82986ae1.js.map",
+    "static/js/2.af3a0241.chunk.js": "/daily-ui-challenge/static/js/2.af3a0241.chunk.js",
+    "static/js/2.af3a0241.chunk.js.map": "/daily-ui-challenge/static/js/2.af3a0241.chunk.js.map",
+    "static/js/3.c1b1dcba.chunk.js": "/daily-ui-challenge/static/js/3.c1b1dcba.chunk.js",
+    "static/js/3.c1b1dcba.chunk.js.map": "/daily-ui-challenge/static/js/3.c1b1dcba.chunk.js.map",
     "index.html": "/daily-ui-challenge/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/daily-ui-challenge/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.c01a6c26.chunk.js.LICENSE.txt": "/daily-ui-challenge/static/js/2.c01a6c26.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/daily-ui-challenge/static/media/logo.6ce24c58.svg"
+    "static/css/main.4a4137e4.chunk.css.map": "/daily-ui-challenge/static/css/main.4a4137e4.chunk.css.map",
+    "static/js/2.af3a0241.chunk.js.LICENSE.txt": "/daily-ui-challenge/static/js/2.af3a0241.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.ff6682c5.js",
-    "static/js/2.c01a6c26.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.8580970d.chunk.js"
+    "static/js/runtime-main.82986ae1.js",
+    "static/js/2.af3a0241.chunk.js",
+    "static/css/main.4a4137e4.chunk.css",
+    "static/js/main.112769b0.chunk.js"
   ]
 }
