@@ -4,10 +4,13 @@ import {
   Card,
   CardActions,
   CardContent,
-  Typography
+  Typography,
+  Link as MuiLink
 } from "@material-ui/core"
 import { createMuiTheme, makeStyles } from "@material-ui/core/styles"
-import { spliceDateString } from "../utils/index"
+import { getProperPath, spliceDateString } from "../utils/index"
+import { Link } from "react-router-dom"
+import globalStyles from '../common/Styles.js';
 
 const theme = createMuiTheme()
 const useStyles = makeStyles({
@@ -18,14 +21,14 @@ const useStyles = makeStyles({
   title: {
     fontSize: 14
   },
-
   buttonArea: {
     justifyContent: "center"
-  }
+  },
 })
 
 const DayCard = ({ challenge, index }) => {
-  const classes = useStyles()
+  const classes = useStyles();
+  const globalClasses = globalStyles();
   const { html_url, images, published_at, tags, title } = challenge
   console.log("tags", tags)
 
@@ -46,13 +49,13 @@ const DayCard = ({ challenge, index }) => {
         </Typography>
       </CardContent>
       <CardActions className={classes.buttonArea}>
-        <Button size="small" variant="outlined">
-          See the code
-        </Button>
-        {/* TODO: should upload real code. have to install react-router */}
-        <Button size="small" variant="outlined" href={html_url}>
-          Open Dribble
-        </Button>
+        <Link to={`/code?title=${getProperPath(title)}`} className={globalClasses.noUnderline}>
+          <Button size="small" variant="outlined">See the code</Button>
+        </Link>
+        
+        <MuiLink underline='none' href={html_url} target='blank' rel="noopener">
+          <Button size='small' variant='outlined'>Open Dribble</Button>
+        </MuiLink>
       </CardActions>
     </Card>
   )
