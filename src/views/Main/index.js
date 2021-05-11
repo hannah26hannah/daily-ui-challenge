@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from "react"
-import { Container, Grid } from "@material-ui/core"
+import { CircularProgress, Container, Grid, makeStyles } from "@material-ui/core"
 import DayCard from "../../components/DayCard"
 import axios from "axios"
+const useStyles = makeStyles({
+  gridLayout: {
+    height: '100vh',
+    justifyContent: 'center',
+    alignItems: 'center'
+  }
+})
 
 const Main = () => {
   const [data, setData] = useState(null)
@@ -9,6 +16,7 @@ const Main = () => {
   const [error, setError] = useState(null)
   const TOKEN = process.env.REACT_APP_API_TOKEN
   const api = `https://api.dribbble.com/v2/user/shots?access_token=${TOKEN}`
+  const classes = useStyles();
 
   useEffect(() => {
     axios(api)
@@ -28,7 +36,8 @@ const Main = () => {
 
   return (
     <Container maxWidth="md">
-      <Grid container>
+      <Grid container className={classes.gridLayout}>
+        {loading && <CircularProgress color='secondary' />}
         {data &&
           data.map((datum, index) => (
             <Grid item xs={6} sm={6} md={6} lg={6} xl={4} key={datum.id}>
